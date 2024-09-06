@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        var numeros = [];
+        var soma = 0;
+        var multiplicacao = 1;
+
+        for (var i = 0; i < 5; i++) {
+            var numero = parseInt(prompt('Digite o número ' + (i + 1) + ':'));
+            numeros.push(numero);
+            soma += numero;
+            multiplicacao *= numero;
+        }
+        alert('Números: ' + numeros.join(', '));
+        alert('Soma: ' + soma);
+        alert('Multiplicação: ' + multiplicacao);
+
+    </script>
+</body>
+</html>
+ 

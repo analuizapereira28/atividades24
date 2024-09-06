@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function intercalarVetores(v1, v2, v3) {
+            var intercalado = [];
+            
+            for (var i = 0; i < v1.length; i++) {
+                intercalado.push(v1[i]);  
+                intercalado.push(v2[i]);  
+                intercalado.push(v3[i]);  
+            }
+            return intercalado;
+        }
+        var vetor1 = [], vetor2 = [], vetor3 = [];
+        for (var i = 0; i < 10; i++) {
+            vetor1[i] = parseInt(prompt("Digite o " + (i + 1) + " valor para o primeiro vetor:"), 10);
+            vetor2[i] = parseInt(prompt("Digite o " + (i + 1) + " valor para o segundo vetor:"), 10);
+            vetor3[i] = parseInt(prompt("Digite o " + (i + 1) + " valor para o terceiro vetor:"), 10);
+        }
+        alert('Vetor intercalado: ' + intercalarVetores(vetor1, vetor2, vetor3).join(', '));
+        </script>
+</body>
+</html>

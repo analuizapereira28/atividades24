@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        function mostrar() {
+            var lista = [8, 7, 6, 4];
+            var soma = 0;
+            for (var posicao in lista) {
+                soma += lista[posicao];
+                alert(lista[posicao]);
+            }
+            alert('Média: ' + (soma / lista.length).toFixed(2));
+        }
+        mostrar();
+    </script>
+</body>
+</html>
+-
